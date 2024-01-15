@@ -7,7 +7,7 @@ use dotenv::dotenv;
 use listenfd::ListenFd;
 use std::env;
 use serde::{Serialize, Deserialize};
-use serde_json::{Value, json};
+use serde_json::{json};
 
 use rusqlite::{Connection, Result};
 // use rusqlite::NO_PARAMS;
