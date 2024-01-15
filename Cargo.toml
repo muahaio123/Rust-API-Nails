@@ -6,6 +6,14 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-actix-web = "2.0"
-actix-rt = "1.0"
-listenfd = "0.3"
+actix-web = "4"
+actix-rt = "2.9.0"
+listenfd = "1.0.1"
+
+# for logging and env file
+dotenv = "0.15"
+log = "0.4"
+env_logger = "0.10.1"
+
+# Diesel ORM for SQL databases
+diesel = { version = "2.1.4", features = ["sqlite"] }
